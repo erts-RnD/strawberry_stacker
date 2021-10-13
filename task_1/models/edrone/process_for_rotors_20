@@ -1,0 +1,11 @@
+sudo apt-get install ros-noetic-joy ros-noetic-octomap-ros ros-noetic-mavlink python3-wstool python3-catkin-tools protobuf-compiler libgoogle-glog-dev ros-noetic-control-toolbox ros-noetic-mavros
+
+git clone https://github.com/ethz-asl/rotors_simulator.git
+wstool init
+wget https://raw.githubusercontent.com/ethz-asl/rotors_simulator/master/rotors_hil.rosinstall
+wstool merge rotors_hil.rosinstall
+wstool update
+
+install .py files change python to python3
+pip3 install python-uinput
+pip3 install pygame
