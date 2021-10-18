@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include 
+        file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name"  value="$(find task_1)/worlds/task1_2.world"/>
+    </include>
+    <node name="moving_marker" type="moving_marker.py" pkg="task_1" />
+</launch>
