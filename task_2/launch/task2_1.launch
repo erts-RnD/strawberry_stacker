@@ -8,7 +8,7 @@
 	<env name="PX4_HOME_LON" value="72.911763"/>
 
 	<include file="$(find mavros)/launch/px4.launch">
-		<arg name="fcu_url" value="udp://:1450@:14557"/>
+		<arg name="fcu_url" value="udp://:14540@:14557"/>
 	</include>
 
 	<include file="$(find px4)/launch/posix_sitl.launch">
