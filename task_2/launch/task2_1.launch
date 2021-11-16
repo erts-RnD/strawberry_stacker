@@ -17,7 +17,7 @@
 
 	<group if="$(arg record)">
 		<node name="rosbag_record_waypoint_misson" pkg="rosbag" type="record"
-		   args="record -O $(find task_2)/bag_files/$(arg rec_name) --duration=$(arg duration) --chunksize=10 /mavros/global_position/global mavros/mission/waypoint" output="screen"/>
+		   args="record -O $(find task_2)/bag_files/$(arg rec_name) --duration=$(arg duration) --chunksize=10 /mavros/global_position/global mavros/mission/waypoints" output="screen"/>
 
 	</group>
 
