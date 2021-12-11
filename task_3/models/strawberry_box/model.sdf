@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="strawberry_box">
+    <pose>0 0 0.078 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.000001423</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000002173</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000034166</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.3 0.24 0.104</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 -0.052 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>./meshes/parcel_box.obj</uri>
+            <scale>0.6 0.6 0.4</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
