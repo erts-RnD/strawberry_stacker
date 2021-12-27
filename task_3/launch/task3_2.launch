@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="record" default="false"/>
+    <arg name="duration" default="180"/>
+    <arg name="rec_name" default="pick_n_place_aruco.bag"/>
+
+	<env name="PX4_HOME_LAT" value="19.134423"/>
+	<env name="PX4_HOME_LON" value="72.911763"/>
+
+	<include file="$(find mavros)/launch/px4.launch">
+		<arg name="fcu_url" value="udp://:14540@:14557"/>
+	</include>
+
+	<include file="$(find px4)/launch/posix_sitl.launch">
+		<arg name="world" value="$(find task_3)/worlds/task3_2.world"/>
+		<arg name="vehicle" value="iris"/>
+		<arg name="sdf" value="$(find task_3)/models/eDrone/eDrone.sdf"/>
+		<arg name="z" value="1"/>
+	</include>
+
+	<node name="throttler_model_states" type="throttle" pkg="topic_tools" args="messages /gazebo/model_states 10"/>
+    <node name="gripper_service" type="gripper_service_3_2.py" pkg="gazebo_ros_link_attacher"/>
+
+	<group if="$(arg record)">
+		<node name="rosbag_record_pick_n_place_aruco" pkg="rosbag" type="record"
+		   args="record -O $(find task_3)/bag_files/$(arg rec_name) --duration=$(arg duration) --chunksize=10 /mavros/setpoint_position/local /mavros/local_position/pose /gazebo/model_states_throttle " output="screen"/>
+
+	</group>
+
+</launch>
