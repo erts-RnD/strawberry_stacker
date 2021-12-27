@@ -15,6 +15,40 @@
           <izz>0.6627</izz>
         </inertia>
       </inertial>
+      <sensor type="camera" name="camera">
+        <pose>0 0.35 0.1 0 1.5707 1.5707</pose>
+        <update_rate>30.0</update_rate>
+        <camera name="head">
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>400</width>
+            <height>400</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.40</near>
+            <far>300</far>
+          </clip>
+        </camera>
+        <plugin name="camera_plugin" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+          <cameraName>camera</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_link</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+          <robotNamespace>eDrone</robotNamespace>
+          <tf_prefix_>eDrone</tf_prefix_>
+        </plugin>
+        <visualize>false</visualize>
+      </sensor>
+
       <collision name='base_link_inertia_collision'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
