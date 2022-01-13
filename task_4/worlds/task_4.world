@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+	<world name="default">
+<!-- <physics type="ode">
+			<max_step_size>0.004</max_step_size>
+			<real_time_factor>1</real_time_factor>
+			<real_time_update_rate>250</real_time_update_rate>
+			<ode>
+				<solver>
+					<iters>50</iters>
+					<island_threads>4</island_threads>
+				</solver>
+			</ode>
+		</physics> -->
+		<scene>
+			<shadows>false</shadows>
+			 <origin_visual>false</origin_visual>
+			<grid>false</grid>
+			<sky>
+				<clouds>
+					<speed>6</speed>
+				</clouds>
+			</sky>
+		</scene>
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://empty_field</uri>
+		</include>
+		<include>
+			<uri>model://scenery</uri>
+			<name>scenery</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_0</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_1</name>
+			<pose>0 20 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_2</name>
+			<pose>0 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_3</name>
+			<pose>20 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_4</name>
+			<pose>20 20 0 0 0 0</pose>
+		</include>
+		<include>
+		<uri>model://strawberry_field</uri>
+			<name>field_5</name>
+			<pose>20 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_6</name>
+			<pose>40 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_7</name>
+			<pose>40 20 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_8</name>
+			<pose>40 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_truck</uri>
+			<name>truck_1</name>
+			<pose>12.3 -6.15 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_truck</uri>
+			<name>truck_2</name>
+			<pose>55 66 0 0 0 0</pose>
+		</include>		
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_1</name>
+			<pose>20 25 0.052 0 0 -1.57</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_2</name>
+			<pose>5 29 0.052 0 0 -1.57</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_3</name>
+			<pose>15 49 0.052 0 0 -1.57</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_4</name>
+			<pose>8 17 0.052 0 0 -1.57</pose>
+		</include>
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+
+	</world>
+</sdf>

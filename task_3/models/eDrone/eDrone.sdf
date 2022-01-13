@@ -43,7 +43,7 @@
           <distortionK3>0.0</distortionK3>
           <distortionT1>0.0</distortionT1>
           <distortionT2>0.0</distortionT2>
-          <robotNamespace>eDrone</robotNamespace>
+          <robotNamespace/>
           <tf_prefix_>eDrone</tf_prefix_>
         </plugin>
         <visualize>false</visualize>
