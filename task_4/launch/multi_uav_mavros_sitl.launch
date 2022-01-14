@@ -19,7 +19,7 @@
     <!-- UAV1 -->
     <group ns="edrone1">
         <!-- MAVROS and vehicle configs -->
-        <arg name="ID" value="1"/>
+        <arg name="ID" value="0"/>
         <arg name="fcu_url" default="udp://:14541@localhost:14581"/>
         <!-- PX4 SITL and vehicle spawn -->
         <include file="$(find task_4)/launch/single_vehicle_spawn.launch">
@@ -48,7 +48,7 @@
     <!-- UAV2 -->
     <group ns="edrone2">
         <!-- MAVROS and vehicle configs -->
-        <arg name="ID" value="2"/>
+        <arg name="ID" value="1"/>
         <arg name="fcu_url" default="udp://:14541@localhost:14582"/>
         <!-- PX4 SITL and vehicle spawn -->
         <include file="$(find task_4)/launch/single_vehicle_spawn.launch">
