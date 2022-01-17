@@ -20,7 +20,7 @@
     <group ns="edrone0">
         <!-- MAVROS and vehicle configs -->
         <arg name="ID" value="0"/>
-        <arg name="fcu_url" default="udp://:14541@localhost:14581"/>
+        <arg name="fcu_url" default="udp://:14540@localhost:14581"/>
         <!-- PX4 SITL and vehicle spawn -->
         <include file="$(find task_4)/launch/single_vehicle_spawn.launch">
             <arg name="x" value="-1"/>
