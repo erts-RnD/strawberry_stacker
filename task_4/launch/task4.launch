@@ -7,7 +7,7 @@
 	<env name="PX4_HOME_LAT" value="19.134423"/>
 	<env name="PX4_HOME_LON" value="72.911763"/>
 
-	<include file="$(find task_4)/launch/multi_uav_mavros_sitl.launch"/>
+	<include file="$(find task_4)/launch/multi_uav_mavros_sitl_sdf.launch"/>
 
 	<node name="throttler_model_states" type="throttle" pkg="topic_tools" args="messages /gazebo/model_states 10"/>
     <node name="edrone_1_gripper_service" type="edrone1_gripper_service.py" pkg="gazebo_ros_link_attacher"/>
