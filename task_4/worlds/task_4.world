@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
 	<world name="default">
-<!-- <physics type="ode">
+<!-- 		<physics type="ode">
 			<max_step_size>0.004</max_step_size>
 			<real_time_factor>1</real_time_factor>
 			<real_time_update_rate>250</real_time_update_rate>
@@ -10,6 +10,9 @@
 					<iters>50</iters>
 					<island_threads>4</island_threads>
 				</solver>
+				<constraints>
+					<contact_surface_layer>0.005</contact_surface_layer>
+				</constraints>
 			</ode>
 		</physics> -->
 		<scene>

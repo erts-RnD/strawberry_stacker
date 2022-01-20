@@ -19,7 +19,7 @@ class edrone_gripper():
         self._attach_srv_d.wait_for_service()
         self.model_state_msg = ModelStates()
         self.box_model_name_list = ['box_0', 'box_1', 'box_2', 'box_3', 'box_4', 'box_5', 'box_6', 'box_7', 'box_8', 'box_9', 'box_10', 'box_11', 'box_12', 'box_13', 'box_14', 'box_15', 'box_16', 'box_17', 'box_18']
-        self.drone_model_name = 'iris_1'
+        self.drone_model_name = 'edrone1'
         rospy.Subscriber('/gazebo/model_states_throttle', ModelStates, self.model_state_callback)
         self.check_pub = rospy.Publisher('/edrone1/gripper_check', String, queue_size=1)
         self.gripper_service = rospy.Service('/edrone1/activate_gripper', Gripper, self.callback_service_on_request)
