@@ -85,7 +85,6 @@ class edrone_gripper():
                 except Exception as err:
                     box_index = -1
                 if(box_index != -1):
-                    
                     if(abs(bx_2 - dr_2) < 0.25):
                         pickable = True
                         box_name = box_model_name
