@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+	<world name="default">
+		<physics type="ode">
+			<max_step_size>0.004</max_step_size>
+			<real_time_factor>1</real_time_factor>
+			<real_time_update_rate>250</real_time_update_rate>
+			<ode>
+				<solver>
+					<iters>75</iters>
+					<island_threads>4</island_threads>
+				</solver>
+				<constraints>
+					<contact_surface_layer>0.005</contact_surface_layer>
+				</constraints>
+			</ode>
+		</physics>
+		<scene>
+			<shadows>false</shadows>
+			 <origin_visual>false</origin_visual>
+			<grid>false</grid>
+			<sky>
+				<clouds>
+					<speed>6</speed>
+				</clouds>
+			</sky>
+		</scene>
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://empty_field</uri>
+		</include>
+		<include>
+			<uri>model://scenery</uri>
+			<name>scenery</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_0</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_1</name>
+			<pose>0 20 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_2</name>
+			<pose>0 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_3</name>
+			<pose>20 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_4</name>
+			<pose>20 20 0 0 0 0</pose>
+		</include>
+		<include>
+		<uri>model://strawberry_field</uri>
+			<name>field_5</name>
+			<pose>20 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_6</name>
+			<pose>40 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_7</name>
+			<pose>40 20 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://strawberry_field</uri>
+			<name>field_8</name>
+			<pose>40 40 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_truck</uri>
+			<name>truck_1</name>
+			<pose>12.3 -6.15 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_truck</uri>
+			<name>truck_2</name>
+			<pose>55 66 0 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_0</name>
+			<pose>100 100 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_1</name>
+			<pose>100 101 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_2</name>
+			<pose>100 102 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_3</name>
+			<pose>100 103 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_4</name>
+			<pose>100 104 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_5</name>
+			<pose>100 105 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_6</name>
+			<pose>100 106 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_7</name>
+			<pose>100 107 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_8</name>
+			<pose>100 108 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_9</name>
+			<pose>100 109 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_10</name>
+			<pose>100 110 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_11</name>
+			<pose>100 111 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_12</name>
+			<pose>100 112 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_13</name>
+			<pose>100 113 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_14</name>
+			<pose>100 114 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_15</name>
+			<pose>100 115 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_16</name>
+			<pose>100 116 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_17</name>
+			<pose>100 117 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_18</name>
+			<pose>100 118 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://red_box</uri>
+			<name>box_19</name>
+			<pose>100 119 0.08 0 0 0</pose>
+		</include>
+				<include>
+			<uri>model://blue_box</uri>
+			<name>box_20</name>
+			<pose>101 100 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_21</name>
+			<pose>101 101 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_22</name>
+			<pose>101 102 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_23</name>
+			<pose>101 103 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_24</name>
+			<pose>101 104 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_25</name>
+			<pose>101 105 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_26</name>
+			<pose>101 106 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_27</name>
+			<pose>101 107 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_28</name>
+			<pose>101 108 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_29</name>
+			<pose>101 109 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_30</name>
+			<pose>101 110 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_31</name>
+			<pose>101 111 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_32</name>
+			<pose>101 112 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_33</name>
+			<pose>101 113 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_34</name>
+			<pose>101 114 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_35</name>
+			<pose>101 115 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_36</name>
+			<pose>101 116 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_37</name>
+			<pose>101 117 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_38</name>
+			<pose>101 118 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_39</name>
+			<pose>101 119 0.08 0  00</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_40</name>
+			<pose>101 120 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_41</name>
+			<pose>101 121 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_42</name>
+			<pose>101 122 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_43</name>
+			<pose>101 123 0.08 0 0 0</pose>
+		</include>
+		<include>
+			<uri>model://blue_box</uri>
+			<name>box_44</name>
+			<pose>101 124 0.08 0 0 0</pose>
+		</include>
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+
+	</world>
+</sdf>
